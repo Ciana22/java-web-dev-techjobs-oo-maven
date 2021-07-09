@@ -26,7 +26,12 @@ public class JobTests {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        Job job_test3 = new Job("Product tester", new Employer("Acme"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job job_test3;
+        job_test3 = new Job("Product tester",
+                new Employer("Acme"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
         //System.out.println(job_test3.getName());
 
         Assertions.assertEquals("Product tester", job_test3.getName());

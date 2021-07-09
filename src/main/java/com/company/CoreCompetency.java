@@ -2,35 +2,37 @@ package com.company;
 
 import java.util.Objects;
 
-public class CoreCompetency {
-    private static int nextId = 1;
-
-    private int id;
-    private String value;
-
-    public CoreCompetency() {
-        this.id = nextId;
-        nextId++;
-    }
+public class CoreCompetency extends JobField {
+//    private static int nextId = 1;
+//
+//    private int id;
+//    private String value;
+//
+//    public CoreCompetency() {
+//        id = nextId;
+//        nextId++;
+//    }
 
     public CoreCompetency(String value) {
-        this();
-        this.value = value;
+        super(value);
+//        this();
+//        this.value = value;
     }
+
 
     // Custom toString, equals, and hashCode methods:
 
-    @Override
-    public String toString() {
-        return this.value;
-    }
+//    @Override
+//    public String toString() {
+//        return this.value;
+//    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CoreCompetency that = (CoreCompetency) o;
-        return id == that.id;
+        CoreCompetency coreCompetency = (CoreCompetency) o;
+        return id == coreCompetency.id;
     }
 
     @Override
@@ -38,17 +40,17 @@ public class CoreCompetency {
         return Objects.hash(id);
     }
 
-    public String getValue() {
-        return value;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+//    public String getValue() {
+//        return value;
+//    }
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setValue(String value) {
+//        this.value = value;
+//    }
 
     // TODO: Use the "Generate" tool to add a getter and setter for the 'value' field but ONLY a getter for the 'id' field
 
