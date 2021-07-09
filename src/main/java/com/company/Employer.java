@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Objects;
-
 public class Employer extends JobField {
     
     public Employer(String value) {
@@ -17,18 +15,18 @@ public class Employer extends JobField {
 //        return this.value;
 //    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employer employer = (Employer) o;
-        return id == employer.id;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Employer employer = (Employer) o;
+//        return id == employer.id;
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id);
+//    }
 
     // Getters and Setters:
 

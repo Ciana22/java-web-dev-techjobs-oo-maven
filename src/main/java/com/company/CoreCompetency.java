@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Objects;
-
 public class CoreCompetency extends JobField {
 //    private static int nextId = 1;
 //
@@ -27,18 +25,18 @@ public class CoreCompetency extends JobField {
 //        return this.value;
 //    }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CoreCompetency coreCompetency = (CoreCompetency) o;
-        return id == coreCompetency.id;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        CoreCompetency coreCompetency = (CoreCompetency) o;
+//        return id == coreCompetency.id;
+//    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id);
+//    }
 
 //    public String getValue() {
 //        return value;

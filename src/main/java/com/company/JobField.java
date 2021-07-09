@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public abstract class JobField {
     private static int nextId = 1;
 
@@ -19,6 +21,11 @@ public abstract class JobField {
     @Override
     public String toString() {
         return this.value;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override

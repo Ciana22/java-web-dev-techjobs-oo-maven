@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Objects;
-
 public class Location extends JobField{
 //    private static int nextId = 1;
 //
@@ -25,17 +23,17 @@ public class Location extends JobField{
 //    @Override
 //    public String toString() { return this.value; }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Location location = (Location) o;
-        return id == location.id;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);}
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Location location = (Location) o;
+//        return id == location.id;
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id);}
     }
 
     // Getters and Setters:
